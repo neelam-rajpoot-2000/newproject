@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:newproject/core/color_constants.dart';
+import 'package:newproject/core/string_constants.dart';
 import 'package:newproject/core/validator.dart';
 import 'package:newproject/google_facework.dart';
 import 'package:newproject/login_screen.dart';
@@ -34,9 +35,9 @@ class _SignInScreenState extends State<SignInScreen> {
                 children: [
                   Row(
                     children: [
-                      Text('Sign In',style: TextStyle(color: Colors.blue,fontSize: 20,fontWeight: FontWeight.w500),),
+                      Text(StringConstants.signinText,style: TextStyle(color: Colors.blue,fontSize: 20,fontWeight: FontWeight.w500),),
                       SizedBox(width: 30,),
-                      Text('Sign Up',style: TextStyle(color: ColorConstants.GreyColor,fontSize: 20,fontWeight: FontWeight.w500),),
+                      Text(StringConstants.loginText,style: TextStyle(color: ColorConstants.GreyColor,fontSize: 20,fontWeight: FontWeight.w500),),
                     ],
                   ),
                   SizedBox(height: 20,),
@@ -47,7 +48,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   SizedBox(
                     height: 50,
                   ),
-                  Text('Email Address',style: TextStyle(color: ColorConstants.DarkgreyColor,fontSize: 20,fontWeight: FontWeight.w600)),
+                  Text(StringConstants.emailText,style: TextStyle(color: ColorConstants.DarkgreyColor,fontSize: 20,fontWeight: FontWeight.w600)),
                   SizedBox(height: 8,),
                   TextFormField(
                     controller: emailController,
@@ -61,7 +62,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     ),
                   ),
                   SizedBox(height: 20,),
-                  Text('Password',style: TextStyle(color: ColorConstants.DarkgreyColor,fontSize: 20,fontWeight: FontWeight.w600)),
+                  Text(StringConstants.passwordText,style: TextStyle(color: ColorConstants.DarkgreyColor,fontSize: 20,fontWeight: FontWeight.w600)),
                   SizedBox(height: 8,),
                   TextFormField(
                     controller: passwordController,
@@ -83,7 +84,7 @@ class _SignInScreenState extends State<SignInScreen> {
                             _passwordVisible = !_passwordVisible;
                           });
                         },
-                        iconSize: 30,
+                        iconSize: 25,
                       ),
                       border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
@@ -98,11 +99,11 @@ class _SignInScreenState extends State<SignInScreen> {
                         Icons.check_box,size: 20,
                       ),
                       SizedBox(width: 3,),
-                      Text('Remember me',style: TextStyle(
+                      Text(StringConstants.text,style: TextStyle(
                         color: Colors.black38,fontWeight: FontWeight.w700,fontSize: 17
                       ),),
                       Spacer(),
-                      Text('Forgot Password?',style: TextStyle(
+                      Text(StringConstants.forwardPasswordText,style: TextStyle(
                           color: Colors.black38,fontWeight: FontWeight.w400,fontSize: 17
                       ),),
                     ],
@@ -136,7 +137,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   ),
                   SizedBox(height: 20,),
                   Center(
-                    child: Text('Or',style: TextStyle(
+                    child: Text(StringConstants.orText,style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w400
                     ),),
