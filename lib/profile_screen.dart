@@ -32,11 +32,13 @@ class _PofileState extends State<Pofile> {
                 Image.asset(IconConstants.setting, height: 20, width: 20),
               ],
             ),
+            SizedBox(height: 40,),
             Center(
               child: ElevatedButton(
                 child: Text('showModalBottomSheet'),
                 onPressed: () {
                   showModalBottomSheet<void>(
+                    isScrollControlled: true,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
                           topLeft: Radius.circular(50.0),
@@ -45,6 +47,7 @@ class _PofileState extends State<Pofile> {
                     context: context,
                     builder: (BuildContext context) {
                       return SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.85,
                         child: Center(
                           child: Padding(
                             padding: const EdgeInsets.symmetric(
