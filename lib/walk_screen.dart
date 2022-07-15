@@ -16,17 +16,18 @@ class _WalkState extends State<Walk> {
     return Stack(
       children: [
         Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.symmetric(vertical: 30, horizontal: 20),
+              padding: EdgeInsets.symmetric(vertical: 30, horizontal: 30),
               decoration: BoxDecoration(
-                color: ColorConstants.lightBlueColor,
+                color: ColorConstants.bluColor,
                 borderRadius: BorderRadius.circular(20),
               ),
               child: Column(
                 children: [
                   Text(StringConstants.tenText),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 20,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -44,7 +45,7 @@ class _WalkState extends State<Walk> {
                           Text(StringConstants.abdulText),
                         ],
                       ),
-                      SizedBox(width: 10,),
+                      SizedBox(width: 20,),
                       Column(
                         children: [
                           ClipRRect(
@@ -60,7 +61,7 @@ class _WalkState extends State<Walk> {
                           Text(StringConstants.abdulText),
                         ],
                       ),
-                      SizedBox(width: 10,),
+                      SizedBox(width: 20,),
                       Column(
                         children: [
                           ClipRRect(
@@ -72,27 +73,97 @@ class _WalkState extends State<Walk> {
                               width: 50,
                             ),
                           ), SizedBox(height: 8,),
-                          Text(StringConstants.abdulText),
+                          Text(StringConstants.abdulText,),
                         ],
                       ),
                     ],
                   ),
-                  Positioned(
-                    child: Container(
-                      height: 80,
-                      width: 80,
-                      decoration: BoxDecoration(
-                        color: ColorConstants.lightBlueColor,
-                        borderRadius: BorderRadius.circular(100),
-                      ),
-                      child:Image.asset(IconConstants.add),
-                    ),
-                  ),
+
                 ],
               ),
             ),
-
+            SizedBox(height: 60,),
+            Text(StringConstants.companyText,style: TextStyle(
+                color: ColorConstants.blackColor,fontSize: 26,fontWeight: FontWeight.w500
+            ),),
+            SizedBox(height: 12,),
+            Text(StringConstants.tText,style: TextStyle(
+              fontSize: 16
+            ),),
+            SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Container(padding: EdgeInsets.symmetric(vertical:30,horizontal: 30 ),
+                  decoration: BoxDecoration(
+                    color: ColorConstants.lightBlueColor,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(StringConstants.placeText,style: TextStyle(
+                        fontWeight: FontWeight.w300,color: Colors.black38,
+                      ),),
+                      SizedBox(height: 5,),
+                      Text(StringConstants.pText,style: TextStyle(
+                        fontSize: 16
+                      ),)
+                    ],
+                  ),
+                ),
+                Container(
+                  padding: EdgeInsets.symmetric(vertical:30,horizontal: 30 ),
+                  decoration: BoxDecoration(
+                    color: ColorConstants.lightBlueColor,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(StringConstants.distanceText,style: TextStyle(
+                        fontWeight: FontWeight.w300,color: Colors.black38,
+                      ),),
+                      SizedBox(height: 5,),
+                      Text(StringConstants.sevenText,style: TextStyle(
+                          fontSize: 16
+                      ),)
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(height: 40,),
+            Container(
+              alignment: Alignment.center,
+              width: double.infinity,
+              padding: EdgeInsets.symmetric(vertical: 20),
+              decoration: BoxDecoration(
+                color: ColorConstants.blueGreyColor,
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+              ),
+              child: Text(
+                'Join',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
           ],
+        ),
+        Positioned(
+          top: 140,left: 120,
+          child: Container(
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(100),
+                color: Colors.white70),
+            padding: EdgeInsets.all(5),
+            child: FloatingActionButton( backgroundColor: ColorConstants.bluColor,
+              onPressed: () {  },
+              child: const Icon(Icons.add,size: 35,),
+            ),
+          ),
         ),
       ],
     );

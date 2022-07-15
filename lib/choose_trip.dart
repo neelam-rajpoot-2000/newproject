@@ -26,10 +26,15 @@ class _ChooseTripState extends State<ChooseTrip> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.asset(
-                  IconConstants.arrowForwardHalf,
-                  height: 30,
-                  width: 30,
+                InkWell(
+                  onTap: (){
+                    Navigator.pop(context);
+                  },
+                  child: Image.asset(
+                    IconConstants.arrowForwardHalf,
+                    height: 30,
+                    width: 30,
+                  ),
                 ),
                 SizedBox(
                   height: 10,
@@ -49,6 +54,7 @@ class _ChooseTripState extends State<ChooseTrip> {
                         TabBar(
                           isScrollable: true,
                           unselectedLabelColor: Colors.grey,
+                          indicatorSize: TabBarIndicatorSize.tab,
                           indicator: BoxDecoration(
                             border: Border.all(
                               color: Colors.black12,

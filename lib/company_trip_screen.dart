@@ -84,13 +84,14 @@ class _CompanyTripState extends State<CompanyTrip> {
                 width: double.infinity,
                 height: 250,
                 child: ListView.builder(
-                  shrinkWrap: true,
+                    shrinkWrap: true,
                     scrollDirection: Axis.horizontal,
                     itemCount: 5,
                     itemBuilder: (BuildContext context, int index) {
-                      return Container(margin: EdgeInsets.symmetric(horizontal: 10),
+                      return Container(
+                        margin: EdgeInsets.symmetric(horizontal: 10),
                         padding:
-                        EdgeInsets.symmetric(horizontal: 40, vertical: 30),
+                            EdgeInsets.symmetric(horizontal: 40, vertical: 30),
                         decoration: BoxDecoration(
                           color: ColorConstants.lightBlueColor,
                           borderRadius: BorderRadius.circular(20),
@@ -131,14 +132,16 @@ class _CompanyTripState extends State<CompanyTrip> {
                               decoration: BoxDecoration(
                                   color: ColorConstants.blueGreyColor,
                                   borderRadius: BorderRadius.circular(10)),
-                              child: Text(StringConstants.mileText,style: TextStyle(
-                                  fontSize: 18, fontWeight: FontWeight.w400),),
+                              child: Text(
+                                StringConstants.mileText,
+                                style: TextStyle(
+                                    fontSize: 18, fontWeight: FontWeight.w400),
+                              ),
                             )
                           ],
                         ),
                       );
-                    }
-                ),
+                    }),
               ),
               SizedBox(
                 height: 30,
@@ -147,7 +150,9 @@ class _CompanyTripState extends State<CompanyTrip> {
                 StringConstants.lastTripText,
                 style: AppStyles.regularSmallFont,
               ),
-              SizedBox(height: 20,),
+              SizedBox(
+                height: 20,
+              ),
               Expanded(
                 child: ListView(
                     scrollDirection: Axis.vertical,
@@ -159,35 +164,45 @@ class _CompanyTripState extends State<CompanyTrip> {
                           title2: StringConstants.twoText,
                           icon: IconConstants.bicycle,
                           subtitle2: StringConstants.date1Text),
-                      SizedBox(height: 20,),
+                      SizedBox(
+                        height: 20,
+                      ),
                       _buildCardViewWidget(
                           subtitle1: StringConstants.octText,
                           title1: StringConstants.walkText,
                           title2: StringConstants.twoText,
                           icon: IconConstants.bicycle,
                           subtitle2: StringConstants.date1Text),
-                      SizedBox(height: 20,),
+                      SizedBox(
+                        height: 20,
+                      ),
                       _buildCardViewWidget(
                           subtitle1: StringConstants.octText,
                           title1: StringConstants.walkText,
                           title2: StringConstants.twoText,
                           icon: IconConstants.bicycle,
                           subtitle2: StringConstants.date1Text),
-                      SizedBox(height: 20,),
+                      SizedBox(
+                        height: 20,
+                      ),
                       _buildCardViewWidget(
                           subtitle1: StringConstants.octText,
                           title1: StringConstants.walkText,
                           title2: StringConstants.twoText,
                           icon: IconConstants.bicycle,
                           subtitle2: StringConstants.date1Text),
-                      SizedBox(height: 20,),
+                      SizedBox(
+                        height: 20,
+                      ),
                       _buildCardViewWidget(
                           subtitle1: StringConstants.octText,
                           title1: StringConstants.walkText,
                           title2: StringConstants.twoText,
                           icon: IconConstants.bicycle,
                           subtitle2: StringConstants.date1Text),
-                      SizedBox(height: 20,),
+                      SizedBox(
+                        height: 20,
+                      ),
                       _buildCardViewWidget(
                           subtitle1: StringConstants.octText,
                           title1: StringConstants.walkText,
@@ -196,11 +211,29 @@ class _CompanyTripState extends State<CompanyTrip> {
                           subtitle2: StringConstants.date1Text),
                     ]),
               ),
-
             ],
           ),
         ),
       ),
+        bottomNavigationBar: BottomNavigationBar(
+            iconSize: 30,
+            showSelectedLabels: false,
+            showUnselectedLabels: false,
+            items: [
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.home),
+                  label: 'Home',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.notifications),
+                label: 'Notifications',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.settings),
+                label: 'Setting',
+              ),
+            ]
+        )
     );
   }
 
@@ -225,25 +258,36 @@ class _CompanyTripState extends State<CompanyTrip> {
             ),
           ),
         ),
-        SizedBox(width: 10,),
+        SizedBox(
+          width: 10,
+        ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(title1,style: AppStyles.richText,),
-            SizedBox(height: 3,),
+            Text(
+              title1,
+              style: AppStyles.richText,
+            ),
+            SizedBox(
+              height: 3,
+            ),
             Text(subtitle1),
           ],
         ),
         Spacer(),
         Column(
           children: [
-            Text(title2,style: AppStyles.richText,),
-            SizedBox(height: 3,),
+            Text(
+              title2,
+              style: AppStyles.richText,
+            ),
+            SizedBox(
+              height: 3,
+            ),
             Text(subtitle2),
           ],
         )
       ],
     );
   }
-
 }
