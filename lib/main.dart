@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:newproject/choose_trip.dart';
+import 'package:newproject/company_trip_screen.dart';
 import 'package:newproject/profile.dart';
 import 'package:newproject/profile_screen.dart';
 import 'package:newproject/setting_screen.dart';
@@ -18,7 +20,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  Pofile(),
+      home:  ChooseTrip(),
     );
   }
 }

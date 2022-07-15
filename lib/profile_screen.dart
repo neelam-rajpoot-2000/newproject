@@ -128,12 +128,13 @@ class _PofileState extends State<Pofile> {
                                   ),
                                 ),
                                 SizedBox(
-                                  height: 10,
+                                  height: 30,
                                 ),
                                 Text(
                                   StringConstants.personalInformationText,
                                   style: AppStyles.whiteSemiBoldFont,
                                 ),
+                                SizedBox(height: 10,),
                                 Expanded(
                                   child: ListView(
                                       scrollDirection: Axis.vertical,
@@ -158,10 +159,12 @@ class _PofileState extends State<Pofile> {
                                         ),
                                       ]),
                                 ),
+                                SizedBox(height: 30,),
                                 Text(
                                   StringConstants.deviceInformationText,
                                   style: AppStyles.whiteSemiBoldFont,
                                 ),
+                                SizedBox(height: 10,),
                                 Expanded(
                                   child: ListView(
                                       scrollDirection: Axis.vertical,

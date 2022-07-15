@@ -1,6 +1,12 @@
 class IconConstants{
   static const base = 'assets/icon_assets_constants';
   static const backware = '$base/backware.png';
+  static const add = '$base/add_blue.png';
+  static const bicycle = '$base/bicycle.jpg';
+  static const arrowForwardHalf= '$base/arr.png';
+  static const whiteHeart = '$base/whiteheart.jpg';
+  static const heart = '$base/h.png';
+  static const fourDots = '$base/four_dots.png';
   static const setting = '$base/setting.png';
   static const about = '$base/about.png';
   static const arrowForward = '$base/arrow-forward.png';

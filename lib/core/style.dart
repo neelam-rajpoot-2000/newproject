@@ -7,7 +7,7 @@ class AppStyles {
     fontFamily: "Segoe UI",
     color: ColorConstants.blackColor,
     fontWeight: FontWeight.w700,
-    fontSize: 20,
+    fontSize: 40,
    // height: 1.5,
     //letterSpacing: 1.5,
   );
@@ -15,14 +15,14 @@ class AppStyles {
     fontFamily: "Segoe UI",
     color: Colors.black38,
     fontWeight: FontWeight.w400,
-    fontSize: 16,
+    fontSize: 17,
     //letterSpacing: 1.5,
   );
   static TextStyle regularSmallFont = TextStyle(
     fontFamily: "Segoe UI",
     color: ColorConstants.blackColor,
-    fontWeight: FontWeight.w700,
-    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    fontSize: 25,
     //height: 1.5,
     //wordSpacing: 1.5,
   );
@@ -39,8 +39,8 @@ class AppStyles {
     fontFamily: "Segoe UI",
     color: ColorConstants.blackColor,
     fontWeight: FontWeight.bold,
-    fontSize: 12.0,
-    letterSpacing: 1.5,
+    fontSize:18.0,
+   // letterSpacing: 1.5,
   );
 
   static TextStyle spanText = TextStyle(

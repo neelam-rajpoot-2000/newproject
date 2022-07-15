@@ -1,5 +1,31 @@
 
 class StringConstants{
+  static const String walkText = 'You drove';
+  static const String Text = '25,547';
+  static const String milesText = 'miles';
+  static const String lastText = 'last trip yesterday at 5:47PM';
+  static const String forYouText = 'For you';
+  static const String familyText = 'Family walk';
+  static const String parkText = 'Navy Park, oct';
+  static const String mileText = '4.1 miles';
+  static const String twoText = '2 miles';
+  static const String sevenText = '7 miles';
+  static const String lastTripText = 'Last trips';
+  static const String date1Text = 'oct, 15 2021';
+  static const String date2Text = 'oct, 12 2021';
+  static const String trainingText = 'Training';
+  static const String octText = 'Manjy Haniyar, oct';
+  static const String chooseText = 'Choose a Trip';
+  static const String WalkText = 'Walk';
+  static const String romTripText = 'Rom trip';
+  static const String tenText = '10 bicycles';
+  static const String abdulText = 'Abdul';
+  static const String companyText = 'Walk with company';
+  static const String tText = 'Training refers to the teaching and learning activities carried on for theprimary purpose of helping memebers of an..';
+  static const String placeText = 'Place';
+  static const String pText = 'Manjy Haniyar';
+  static const String distanceText = 'Distance';
+  static const String joinText = 'Join';
   static const String cardsText = 'Cards';
   static const String helpCenterText = 'Help Center';
   static const String historyText = 'History';
